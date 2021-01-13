@@ -15,14 +15,16 @@ module.exports = {
         DEFAULT: '#ddc996',
         light: '#f1eee4'
       },
-      fontFamily: {
-        'body': ['TRAJAN PRO', 'sans-serif']
-      },
-      extend: {}
     },
+    fontFamily: {
+      'serif': ['Libre Baskerville', 'serif'],
+      'playfair': ['Playfair Display', 'serif']
+    },
+    extend: {}
   },
   variants: {
     extend: {},
   },
   plugins: [],
 }
+ 
