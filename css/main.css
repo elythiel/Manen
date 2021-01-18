@@ -19249,6 +19249,56 @@ video {
           animation: bounce 1s infinite;
 }
 
+.header {
+  --tw-bg-opacity: 1;
+  background-color: rgba(118, 147, 157, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(221, 201, 150, var(--tw-border-opacity));
+  border-bottom-width: 4px;
+  display: flex;
+  top: 0px;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 100%;
+}
+
+.header .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 33.333333%;
+}
+
+.header .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-family: Playfair Display, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: auto;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  text-transform: uppercase;
+}
+
+.header .navbar a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.header .navbar a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6rem;
+}
+
+/* navbar dragons */
+
 .navbar::before,
 .navbar::after
 {
@@ -19259,8 +19309,8 @@ video {
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
-  height: 14rem;
-  width: 11rem;
+  height: 10rem;
+  width: 8rem;
 }
 
 .navbar::before {
@@ -19269,6 +19319,34 @@ video {
 
 .navbar::after {
   background-image: url('/img/dragon_droite.png');
+}
+
+/* home page header */
+
+.header.h-screen {
+  flex-direction: column;
+}
+
+.header.h-screen .logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.666667%;
+}
+
+.header.h-screen .navbar {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.header.h-screen .navbar a img {
+  width: 8rem;
+}
+
+.header.h-screen .navbar::before, .header.h-screen .navbar::after{
+  height: 14rem;
+  width: 11rem;
 }
 
 @media (min-width: 640px){

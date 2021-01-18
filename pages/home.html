@@ -11,29 +11,31 @@
 
 <body class="bg-secondary-light font-serif">
 
-	<header class="block h-screen w-full bg-primary flex flex-col border-b-4 border-secondary">
-		<img src="/img/logo_2.png" alt="Logo Manen" class="w-2/3 my-auto mx-auto" />
+	<!-- header wrapper -->
+	<div class="w-full h-screen">
+		<header id="header" class="header h-screen">
+			<img src="/img/logo_2.png" alt="Logo Manen" class="logo" />
 
-		<nav class="navbar flex flex-row items-end justify-around 
-				text-white uppercase text-3xl font-playfair px-12 text-center">
-			<a class="px-12 py-4" href="/galerie">
-				<img class="block mx-auto w-32" src="/img/galerie.png" />
-				Galerie
-			</a>
-			<a class="px-12 py-4" href="/albums">
-				<img class="block mx-auto w-32" src="/img/album.png" />
-				Albums
-			</a>
-			<a class="px-12 py-4" href="/concerts">
-				<img class="block mx-auto w-32" src="/img/concert.png" />
-				Concerts
-			</a>
-			<a class="px-12 py-4" href="/contact">
-				<img class="block mx-auto w-32" src="/img/contact.png" />
-				Contact
-			</a>
-		</nav>
-	</header>
+			<nav class="navbar">
+				<a href="/galerie">
+					<img src="/img/galerie.png" />
+					Galerie
+				</a>
+				<a href="/albums">
+					<img src="/img/album.png" />
+					Albums
+				</a>
+				<a href="/concerts">
+					<img src="/img/concert.png" />
+					Concerts
+				</a>
+				<a href="/contact">
+					<img src="/img/contact.png" />
+					Contact
+				</a>
+			</nav>
+		</header>
+	</div>
 
 	<div class="container mx-auto px-24 py-12 text-2xl text-primary">
 
@@ -71,6 +73,8 @@
 
 	<footer>
 	</footer>
+
+	<script src="/js/home.js"></script>
 
 </body>
 
