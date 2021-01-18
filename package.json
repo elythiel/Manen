@@ -1,0 +1,30 @@
+{
+  "name": "manen",
+  "version": "1.0.0",
+  "description": "Site officiel du groupe Manen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss src/style.css -o css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aureliem07/Manen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aureliem07/Manen/issues"
+  },
+  "homepage": "https://github.com/aureliem07/Manen#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.3",
+    "postcss-cli": "^8.3.1"
+  },
+  "keywords": []
+}
