@@ -5,15 +5,4 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.navbar::before,
-.navbar::after
-{
-    content: '';
-    @apply w-44 h-56 block bg-no-repeat bg-contain;
-}
-.navbar::before {
-    background-image: url('/img/dragon_gauche.png');
-}
-.navbar::after {
-    background-image: url('/img/dragon_droite.png');
-}
+@import "./header.css";
