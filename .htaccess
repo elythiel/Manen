@@ -1,0 +1,9 @@
+# disallow listing files in folder
+Options -Indexes
+
+# if requested file or folder does not exist, redirect to index.php 
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [QSA,L]
