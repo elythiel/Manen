@@ -4,40 +4,41 @@
 		<meta charset="UTF-8" lang="fr"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title> Manen </title>
+		<title> Accueil Manen </title>
 
-		<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	</head>
 
 <body class="bg-secondary-light font-serif">
 
-	<header class="block h-screen w-full bg-primary flex flex-col border-b-4 border-secondary">
+	<header class="block h-screen w-full bg-primary flex flex-col">
 		<img src="/img/logo_2.png" alt="Logo Manen" class="w-2/3 my-auto mx-auto" />
 
-		<nav class="navbar flex flex-row items-end justify-around 
-				text-white uppercase text-3xl font-playfair px-12 text-center">
-			<a class="px-12 py-4" href="/galerie">
-				<img class="block mx-auto w-32" src="/img/galerie.png" />
-				Galerie
-			</a>
-			<a class="px-12 py-4" href="/albums">
-				<img class="block mx-auto w-32" src="/img/album.png" />
-				Albums
-			</a>
-			<a class="px-12 py-4" href="/concerts">
-				<img class="block mx-auto w-32" src="/img/concert.png" />
-				Concerts
-			</a>
-			<a class="px-12 py-4" href="/contact">
-				<img class="block mx-auto w-32" src="/img/contact.png" />
-				Contact
-			</a>
+		<nav class="navbar border-b-4 border-secondary flex items-end px-12">
+			<ul class="flex-grow flex flex-row justify-around text-white text-3xl font-playfair mb-4">
+				<li class="flex flex-col items-center">
+					<img src="img/galerie.png" class="w-32" />
+					<a href="galerie.html"> GALERIE </a>
+				</li>
+				<li class="flex flex-col items-center">
+					<img src="img/album.png" class="w-32" />
+					<a href="album.html"> ALBUM </a>
+				</li>
+				<li class="flex flex-col items-center">
+					<img src="img/concert.png" class="w-32" />
+					<a href="concert.html"> CONCERT </a>
+				</li>
+				<li class="flex flex-col items-center">
+					<img src="img/contact.png" class="w-32" />
+					<a href="presentation.html"> CONTACT </a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
 	<div class="container mx-auto px-24 py-12 text-2xl text-primary">
 
-		<img src="/medias/images/membres.png" alt="Photo des membres de Manen" class="mb-12" />
+		<img src="img/membres.png" alt="Photo des membres de Manen" class="mb-12" />
 		<div class="px-8 text-justify">
 			<p class="mb-2">
 				Le groupe Månen est constitué de deux frères à la composition et d'un ami à l'écriture.
